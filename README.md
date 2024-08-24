@@ -1,4 +1,4 @@
-# Hommie Assist: A Chatbot for Home Improvement related queries1
+# Hommie Assist: A Chatbot for Home Improvement related queries
 
 ## Objective
 Develop a basic version of a chatbot designed for lead generation on home improvement websites. The chatbot will demonstrate the core functionalities required for capturing user information, providing service options, and guiding users towards their desired solutions.
@@ -38,7 +38,7 @@ Develop a basic version of a chatbot designed for lead generation on home improv
 
 ## Getting Started
 
-1. **Clone the Repository**: `git clone <repository-url>`
+1. **Clone the Repository**: `git clone <https://github.com/valor30/hommie-assist>`
 2. **Install Dependencies**:
    - Navigate to the project directory.
    - Install all the necessary backend dependencies using `pip install -r requirements.txt`.
