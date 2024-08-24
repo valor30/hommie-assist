@@ -1,8 +1,8 @@
-// src/components/LeadForm.js
 import React from 'react';
 import { Box, TextField, Button, Typography } from '@mui/material';
+import { useForm } from 'react-hook-form';
 
-const LeadForm = ({ onSubmit }) => {
+const LeadForm = ({ onSubmit, onClose }) => {
   const [formData, setFormData] = React.useState({
     name: '',
     email: '',
@@ -36,6 +36,7 @@ const LeadForm = ({ onSubmit }) => {
         value={formData.name}
         onChange={handleChange}
         required
+        placeholder="Your name"
       />
       <TextField
         label="Email"
@@ -44,6 +45,7 @@ const LeadForm = ({ onSubmit }) => {
         value={formData.email}
         onChange={handleChange}
         required
+        placeholder="yourmail@example.com"
       />
       <TextField
         label="Phone"
@@ -51,6 +53,7 @@ const LeadForm = ({ onSubmit }) => {
         value={formData.phone}
         onChange={handleChange}
         required
+        placeholder="12345 67890"
       />
       <TextField
         label="Service Interested In"
@@ -58,9 +61,13 @@ const LeadForm = ({ onSubmit }) => {
         value={formData.service}
         onChange={handleChange}
         required
+        placeholder="Plumbing Service"
       />
       <Button type="submit" variant="contained" color="primary">
         Submit
+      </Button>
+      <Button onClick={onClose} variant="outlined" color="secondary">
+        Close
       </Button>
     </Box>
   );
